@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B906D9E617B3FCC600B39439 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906D9E517B3FCC600B39439 /* Cocoa.framework */; };
-		B906D9F017B3FCC600B39439 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B906D9EE17B3FCC600B39439 /* InfoPlist.strings */; };
-		B906D9F417B3FCC600B39439 /* NDDStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = B906D9F317B3FCC600B39439 /* NDDStateMachine.m */; };
-		B906D9FB17B3FCC700B39439 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906D9FA17B3FCC700B39439 /* XCTest.framework */; };
-		B906D9FC17B3FCC700B39439 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906D9E517B3FCC600B39439 /* Cocoa.framework */; };
 		B906D9FF17B3FCC700B39439 /* NDDStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906D9E217B3FCC600B39439 /* NDDStateMachine.framework */; };
-		B906DA0517B3FCC700B39439 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B906DA0317B3FCC700B39439 /* InfoPlist.strings */; };
-		B906DA0717B3FCC700B39439 /* NDDStateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA0617B3FCC700B39439 /* NDDStateMachineTests.m */; };
+		B906DA1717B3FEDA00B39439 /* NDDStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA1317B3FEDA00B39439 /* NDDStateMachine.h */; };
+		B906DA1817B3FEDA00B39439 /* NDDStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA1417B3FEDA00B39439 /* NDDStateMachine.m */; };
+		B906DA1917B3FEDA00B39439 /* NDDStateMachine.Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA1517B3FEDA00B39439 /* NDDStateMachine.Private.h */; };
+		B906DA1D17B3FFD600B39439 /* NDDStateMachine.Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA1617B3FEDA00B39439 /* NDDStateMachine.Tests.m */; };
+		B906DA2817B4032F00B39439 /* NDDStateMachineEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA2417B4032F00B39439 /* NDDStateMachineEvent.h */; };
+		B906DA2917B4032F00B39439 /* NDDStateMachineEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA2517B4032F00B39439 /* NDDStateMachineEvent.m */; };
+		B906DA2A17B4032F00B39439 /* NDDStateMachineEvent.Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA2617B4032F00B39439 /* NDDStateMachineEvent.Private.h */; };
+		B906DA3017B4036100B39439 /* NDDStateMachineState.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA2C17B4036100B39439 /* NDDStateMachineState.h */; };
+		B906DA3117B4036100B39439 /* NDDStateMachineState.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA2D17B4036100B39439 /* NDDStateMachineState.m */; };
+		B906DA3217B4036100B39439 /* NDDStateMachineState.Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA2E17B4036100B39439 /* NDDStateMachineState.Private.h */; };
+		B906DA3417B4036700B39439 /* NDDStateMachineEvent.Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA2717B4032F00B39439 /* NDDStateMachineEvent.Tests.m */; };
+		B906DA3517B4036700B39439 /* NDDStateMachineState.Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA2F17B4036100B39439 /* NDDStateMachineState.Tests.m */; };
+		B906DA3A17B4038700B39439 /* NDDStateMachineTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA3617B4038700B39439 /* NDDStateMachineTransition.h */; };
+		B906DA3B17B4038700B39439 /* NDDStateMachineTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA3717B4038700B39439 /* NDDStateMachineTransition.m */; };
+		B906DA3C17B4038700B39439 /* NDDStateMachineTransition.Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA3817B4038700B39439 /* NDDStateMachineTransition.Private.h */; };
+		B906DA4217B4039500B39439 /* NDDStateMachineTransitionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA3E17B4039500B39439 /* NDDStateMachineTransitionFactory.h */; };
+		B906DA4317B4039500B39439 /* NDDStateMachineTransitionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA3F17B4039500B39439 /* NDDStateMachineTransitionFactory.m */; };
+		B906DA4417B4039500B39439 /* NDDStateMachineTransitionFactory.Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B906DA4017B4039500B39439 /* NDDStateMachineTransitionFactory.Private.h */; };
+		B906DA4617B4039E00B39439 /* NDDStateMachineTransition.Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA3917B4038700B39439 /* NDDStateMachineTransition.Tests.m */; };
+		B906DA4717B4039E00B39439 /* NDDStateMachineTransitionFactory.Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906DA4117B4039500B39439 /* NDDStateMachineTransitionFactory.Tests.m */; };
+		B906DA4A17B4158F00B39439 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906DA4917B4158F00B39439 /* SenTestingKit.framework */; };
+		B906DA4B17B4167900B39439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906D9E817B3FCC600B39439 /* Foundation.framework */; };
+		B906DA4C17B4168D00B39439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906D9E817B3FCC600B39439 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,15 +50,32 @@
 		B906D9E917B3FCC600B39439 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B906D9EA17B3FCC600B39439 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B906D9ED17B3FCC600B39439 /* NDDStateMachine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDDStateMachine-Info.plist"; sourceTree = "<group>"; };
-		B906D9EF17B3FCC600B39439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B906D9F117B3FCC600B39439 /* NDDStateMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NDDStateMachine-Prefix.pch"; sourceTree = "<group>"; };
-		B906D9F217B3FCC600B39439 /* NDDStateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDDStateMachine.h; sourceTree = "<group>"; };
-		B906D9F317B3FCC600B39439 /* NDDStateMachine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachine.m; sourceTree = "<group>"; };
 		B906D9F917B3FCC700B39439 /* NDDStateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDDStateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B906D9FA17B3FCC700B39439 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B906DA0217B3FCC700B39439 /* NDDStateMachineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDDStateMachineTests-Info.plist"; sourceTree = "<group>"; };
-		B906DA0417B3FCC700B39439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B906DA0617B3FCC700B39439 /* NDDStateMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineTests.m; sourceTree = "<group>"; };
+		B906DA1017B3FE0900B39439 /* NDDStateMachineTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NDDStateMachineTests-Info.plist"; sourceTree = "<group>"; };
+		B906DA1317B3FEDA00B39439 /* NDDStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachine.h; sourceTree = "<group>"; };
+		B906DA1417B3FEDA00B39439 /* NDDStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachine.m; sourceTree = "<group>"; };
+		B906DA1517B3FEDA00B39439 /* NDDStateMachine.Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachine.Private.h; sourceTree = "<group>"; };
+		B906DA1617B3FEDA00B39439 /* NDDStateMachine.Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachine.Tests.m; sourceTree = "<group>"; };
+		B906DA1C17B3FF9600B39439 /* NDDStateMachineDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineDataSource.h; sourceTree = "<group>"; };
+		B906DA2417B4032F00B39439 /* NDDStateMachineEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineEvent.h; sourceTree = "<group>"; };
+		B906DA2517B4032F00B39439 /* NDDStateMachineEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineEvent.m; sourceTree = "<group>"; };
+		B906DA2617B4032F00B39439 /* NDDStateMachineEvent.Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineEvent.Private.h; sourceTree = "<group>"; };
+		B906DA2717B4032F00B39439 /* NDDStateMachineEvent.Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineEvent.Tests.m; sourceTree = "<group>"; };
+		B906DA2C17B4036100B39439 /* NDDStateMachineState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineState.h; sourceTree = "<group>"; };
+		B906DA2D17B4036100B39439 /* NDDStateMachineState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineState.m; sourceTree = "<group>"; };
+		B906DA2E17B4036100B39439 /* NDDStateMachineState.Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineState.Private.h; sourceTree = "<group>"; };
+		B906DA2F17B4036100B39439 /* NDDStateMachineState.Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineState.Tests.m; sourceTree = "<group>"; };
+		B906DA3617B4038700B39439 /* NDDStateMachineTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineTransition.h; sourceTree = "<group>"; };
+		B906DA3717B4038700B39439 /* NDDStateMachineTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineTransition.m; sourceTree = "<group>"; };
+		B906DA3817B4038700B39439 /* NDDStateMachineTransition.Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineTransition.Private.h; sourceTree = "<group>"; };
+		B906DA3917B4038700B39439 /* NDDStateMachineTransition.Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineTransition.Tests.m; sourceTree = "<group>"; };
+		B906DA3E17B4039500B39439 /* NDDStateMachineTransitionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineTransitionFactory.h; sourceTree = "<group>"; };
+		B906DA3F17B4039500B39439 /* NDDStateMachineTransitionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineTransitionFactory.m; sourceTree = "<group>"; };
+		B906DA4017B4039500B39439 /* NDDStateMachineTransitionFactory.Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDStateMachineTransitionFactory.Private.h; sourceTree = "<group>"; };
+		B906DA4117B4039500B39439 /* NDDStateMachineTransitionFactory.Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDStateMachineTransitionFactory.Tests.m; sourceTree = "<group>"; };
+		B906DA4917B4158F00B39439 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B906D9E617B3FCC600B39439 /* Cocoa.framework in Frameworks */,
+				B906DA4C17B4168D00B39439 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B906D9FC17B3FCC700B39439 /* Cocoa.framework in Frameworks */,
+				B906DA4B17B4167900B39439 /* Foundation.framework in Frameworks */,
+				B906DA4A17B4158F00B39439 /* SenTestingKit.framework in Frameworks */,
 				B906D9FF17B3FCC700B39439 /* NDDStateMachine.framework in Frameworks */,
-				B906D9FB17B3FCC700B39439 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +103,13 @@
 		B906D9D817B3FCC600B39439 = {
 			isa = PBXGroup;
 			children = (
-				B906D9EB17B3FCC600B39439 /* NDDStateMachine */,
-				B906DA0017B3FCC700B39439 /* NDDStateMachineTests */,
+				B906DA1217B3FE7800B39439 /* NDDStateMachine */,
+				B906DA1B17B3FF7700B39439 /* NDDStateMachineDataSource */,
+				B906DA1E17B4023D00B39439 /* NDDStateMachineEvent */,
+				B906DA1F17B4024500B39439 /* NDDStateMachineState */,
+				B906DA2017B4024C00B39439 /* NDDStateMachineTransition */,
+				B906DA2117B4025200B39439 /* NDDStateMachineTransitionFactory */,
+				B906D9EC17B3FCC600B39439 /* Supporting Files */,
 				B906D9E417B3FCC600B39439 /* Frameworks */,
 				B906D9E317B3FCC600B39439 /* Products */,
 			);
@@ -89,6 +127,7 @@
 		B906D9E417B3FCC600B39439 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B906DA4917B4158F00B39439 /* SenTestingKit.framework */,
 				B906D9E517B3FCC600B39439 /* Cocoa.framework */,
 				B906D9FA17B3FCC700B39439 /* XCTest.framework */,
 				B906D9E717B3FCC600B39439 /* Other Frameworks */,
@@ -106,42 +145,77 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		B906D9EB17B3FCC600B39439 /* NDDStateMachine */ = {
-			isa = PBXGroup;
-			children = (
-				B906D9F217B3FCC600B39439 /* NDDStateMachine.h */,
-				B906D9F317B3FCC600B39439 /* NDDStateMachine.m */,
-				B906D9EC17B3FCC600B39439 /* Supporting Files */,
-			);
-			path = NDDStateMachine;
-			sourceTree = "<group>";
-		};
 		B906D9EC17B3FCC600B39439 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				B906D9ED17B3FCC600B39439 /* NDDStateMachine-Info.plist */,
-				B906D9EE17B3FCC600B39439 /* InfoPlist.strings */,
+				B906DA1017B3FE0900B39439 /* NDDStateMachineTests-Info.plist */,
 				B906D9F117B3FCC600B39439 /* NDDStateMachine-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B906DA0017B3FCC700B39439 /* NDDStateMachineTests */ = {
+		B906DA1217B3FE7800B39439 /* NDDStateMachine */ = {
 			isa = PBXGroup;
 			children = (
-				B906DA0617B3FCC700B39439 /* NDDStateMachineTests.m */,
-				B906DA0117B3FCC700B39439 /* Supporting Files */,
+				B906DA1317B3FEDA00B39439 /* NDDStateMachine.h */,
+				B906DA1517B3FEDA00B39439 /* NDDStateMachine.Private.h */,
+				B906DA1417B3FEDA00B39439 /* NDDStateMachine.m */,
+				B906DA1617B3FEDA00B39439 /* NDDStateMachine.Tests.m */,
 			);
-			path = NDDStateMachineTests;
+			path = NDDStateMachine;
 			sourceTree = "<group>";
 		};
-		B906DA0117B3FCC700B39439 /* Supporting Files */ = {
+		B906DA1B17B3FF7700B39439 /* NDDStateMachineDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				B906DA0217B3FCC700B39439 /* NDDStateMachineTests-Info.plist */,
-				B906DA0317B3FCC700B39439 /* InfoPlist.strings */,
+				B906DA1C17B3FF9600B39439 /* NDDStateMachineDataSource.h */,
 			);
-			name = "Supporting Files";
+			path = NDDStateMachineDataSource;
+			sourceTree = "<group>";
+		};
+		B906DA1E17B4023D00B39439 /* NDDStateMachineEvent */ = {
+			isa = PBXGroup;
+			children = (
+				B906DA2417B4032F00B39439 /* NDDStateMachineEvent.h */,
+				B906DA2617B4032F00B39439 /* NDDStateMachineEvent.Private.h */,
+				B906DA2517B4032F00B39439 /* NDDStateMachineEvent.m */,
+				B906DA2717B4032F00B39439 /* NDDStateMachineEvent.Tests.m */,
+			);
+			path = NDDStateMachineEvent;
+			sourceTree = "<group>";
+		};
+		B906DA1F17B4024500B39439 /* NDDStateMachineState */ = {
+			isa = PBXGroup;
+			children = (
+				B906DA2C17B4036100B39439 /* NDDStateMachineState.h */,
+				B906DA2E17B4036100B39439 /* NDDStateMachineState.Private.h */,
+				B906DA2D17B4036100B39439 /* NDDStateMachineState.m */,
+				B906DA2F17B4036100B39439 /* NDDStateMachineState.Tests.m */,
+			);
+			path = NDDStateMachineState;
+			sourceTree = "<group>";
+		};
+		B906DA2017B4024C00B39439 /* NDDStateMachineTransition */ = {
+			isa = PBXGroup;
+			children = (
+				B906DA3617B4038700B39439 /* NDDStateMachineTransition.h */,
+				B906DA3817B4038700B39439 /* NDDStateMachineTransition.Private.h */,
+				B906DA3717B4038700B39439 /* NDDStateMachineTransition.m */,
+				B906DA3917B4038700B39439 /* NDDStateMachineTransition.Tests.m */,
+			);
+			path = NDDStateMachineTransition;
+			sourceTree = "<group>";
+		};
+		B906DA2117B4025200B39439 /* NDDStateMachineTransitionFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B906DA3E17B4039500B39439 /* NDDStateMachineTransitionFactory.h */,
+				B906DA4017B4039500B39439 /* NDDStateMachineTransitionFactory.Private.h */,
+				B906DA3F17B4039500B39439 /* NDDStateMachineTransitionFactory.m */,
+				B906DA4117B4039500B39439 /* NDDStateMachineTransitionFactory.Tests.m */,
+			);
+			path = NDDStateMachineTransitionFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +225,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B906DA3A17B4038700B39439 /* NDDStateMachineTransition.h in Headers */,
+				B906DA3C17B4038700B39439 /* NDDStateMachineTransition.Private.h in Headers */,
+				B906DA2817B4032F00B39439 /* NDDStateMachineEvent.h in Headers */,
+				B906DA1917B3FEDA00B39439 /* NDDStateMachine.Private.h in Headers */,
+				B906DA4417B4039500B39439 /* NDDStateMachineTransitionFactory.Private.h in Headers */,
+				B906DA3217B4036100B39439 /* NDDStateMachineState.Private.h in Headers */,
+				B906DA1717B3FEDA00B39439 /* NDDStateMachine.h in Headers */,
+				B906DA4217B4039500B39439 /* NDDStateMachineTransitionFactory.h in Headers */,
+				B906DA3017B4036100B39439 /* NDDStateMachineState.h in Headers */,
+				B906DA2A17B4032F00B39439 /* NDDStateMachineEvent.Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +314,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B906D9F017B3FCC600B39439 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B906DA0517B3FCC700B39439 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B906D9F417B3FCC600B39439 /* NDDStateMachine.m in Sources */,
+				B906DA1817B3FEDA00B39439 /* NDDStateMachine.m in Sources */,
+				B906DA3B17B4038700B39439 /* NDDStateMachineTransition.m in Sources */,
+				B906DA3117B4036100B39439 /* NDDStateMachineState.m in Sources */,
+				B906DA2917B4032F00B39439 /* NDDStateMachineEvent.m in Sources */,
+				B906DA4317B4039500B39439 /* NDDStateMachineTransitionFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B906DA0717B3FCC700B39439 /* NDDStateMachineTests.m in Sources */,
+				B906DA4617B4039E00B39439 /* NDDStateMachineTransition.Tests.m in Sources */,
+				B906DA3517B4036700B39439 /* NDDStateMachineState.Tests.m in Sources */,
+				B906DA3417B4036700B39439 /* NDDStateMachineEvent.Tests.m in Sources */,
+				B906DA4717B4039E00B39439 /* NDDStateMachineTransitionFactory.Tests.m in Sources */,
+				B906DA1D17B3FFD600B39439 /* NDDStateMachine.Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,25 +360,6 @@
 			targetProxy = B906D9FD17B3FCC700B39439 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B906D9EE17B3FCC600B39439 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B906D9EF17B3FCC600B39439 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B906DA0317B3FCC700B39439 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B906DA0417B3FCC700B39439 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B906DA0817B3FCC700B39439 /* Debug */ = {
@@ -369,8 +440,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NDDStateMachine/NDDStateMachine-Prefix.pch";
-				INFOPLIST_FILE = "NDDStateMachine/NDDStateMachine-Info.plist";
+				GCC_PREFIX_HEADER = "Supporting Files/NDDStateMachine-Prefix.pch";
+				INFOPLIST_FILE = "Supporting Files/NDDStateMachine-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -384,8 +455,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NDDStateMachine/NDDStateMachine-Prefix.pch";
-				INFOPLIST_FILE = "NDDStateMachine/NDDStateMachine-Info.plist";
+				GCC_PREFIX_HEADER = "Supporting Files/NDDStateMachine-Prefix.pch";
+				INFOPLIST_FILE = "Supporting Files/NDDStateMachine-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -401,12 +472,17 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NDDStateMachine/NDDStateMachine-Prefix.pch";
+				GCC_PREFIX_HEADER = "Supporting Files/NDDStateMachine-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "NDDStateMachineTests/NDDStateMachineTests-Info.plist";
+				INFOPLIST_FILE = "Supporting Files/NDDStateMachineTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -423,8 +499,13 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NDDStateMachine/NDDStateMachine-Prefix.pch";
-				INFOPLIST_FILE = "NDDStateMachineTests/NDDStateMachineTests-Info.plist";
+				GCC_PREFIX_HEADER = "Supporting Files/NDDStateMachine-Prefix.pch";
+				INFOPLIST_FILE = "Supporting Files/NDDStateMachineTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

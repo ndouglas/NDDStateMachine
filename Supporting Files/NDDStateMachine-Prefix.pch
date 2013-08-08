@@ -1,0 +1,87 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
+
+//	Debugging macros.
+
+#define NDD_TRACE_ENTRY
+#define NDD_TRACE_EXIT
+#define NDD_TRACE_OBJECT(x)
+#define NDD_ASSERT(x)
+#define NDD_TRACE_INIT
+#define NDD_TRACE_BOOLEAN(x)
+#define NDD_LOG(...)
+#define NDD_TRACE_POINTER(x)
+#define NDD_TRACE_ERROR(x)			
+#define NDD_WEAKSELF																				__weak __typeof__(self) weakSelf = self;
+#define NDD_STRONGSELF																			_Pragma("clang diagnostic push")														\
+																														_Pragma("clang diagnostic ignored \"-Wshadow\"")						\
+																														__strong __typeof__(self) self = weakSelf;
+																														_Pragma("clang diagnostic pop")
+
+#define NDD_OPTION_BASE_DEBUG_TRACE_LOCAL										FALSE
+
+
+@class NDDStateMachine;
+
+/**
+ A general purpose block.
+ */
+
+typedef dispatch_block_t NDDBasicBlockType;
+
+/**
+ A general purpose error handler block that can handle success states and errors.
+
+ @param _success_ Whether the operation succeeded or not.
+ @param _error_ An error object that may or may not be nil.
+ */
+
+typedef void(^NDDErrorHandlerType)(BOOL _success_, NSError *_error_);
+
+/**
+ A block containing statements in Objective-C and/or a domain-specific language describing
+ the construction of an instance of NDDStateMachine.
+ 
+ @param _stateMachine_ The state machine instance that this block will initialize.
+ @param _errorHandler_ An error handler that will handle any errors arising in the course
+ of constructing the state machine and that must be called.
+ */
+
+typedef void (^NDDStateMachineDefinitionType)(NDDStateMachine *_stateMachine_, NDDErrorHandlerType _errorHandler_);
+
+/**
+ A block that evaluates the current application state to determine whether we should allow
+ the transition to take place.
+ 
+ @param _error_ An error set to a valid error in the event that the acceptor refuses to
+ allow the transition.
+ @return YES if the transition is allowed, otherwise NO.
+ */
+
+typedef BOOL (^NDDStateMachineAcceptorType)(NSError **_error_);
+
+/**
+ A default machine definition.
+ */
+
+extern NDDStateMachineDefinitionType NDDStateMachineDefinition_Default;
+
+/**
+ A default acceptor.
+ */
+
+extern NDDStateMachineAcceptorType NDDStateMachineAcceptor_Default;
+
+/**
+ A default error handler.
+ */
+
+extern NDDErrorHandlerType NDDStateMachineErrorHandler_Default;
+
